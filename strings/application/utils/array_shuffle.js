@@ -1,4 +1,6 @@
 module.exports.shuffle = function(array) {
+  // Encontrei esse codigo no stackoverflow
+  
   var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...

@@ -1,4 +1,5 @@
-let shuffle = require('./utils/array_shuffle.js');
+let arrayShuffle = require('./utils/array_shuffle.js');
+let comprimentoHelper = require('./utils/comprimento_helper.js');
 
 function intermediario(texto, comprimento) {
   let saida = '';
@@ -6,7 +7,7 @@ function intermediario(texto, comprimento) {
   let largura = 0;
 
   while(pos < texto.length) {
-    largura = definirComprimentoDaLinha(texto, pos, comprimento);
+    largura = comprimentoHelper.definirComprimentoDaLinha(texto, pos, comprimento);
     saida = saida + justificarLinha(texto.substr(pos, largura).trim(), comprimento) + "\n";    
     pos += largura;
   }
@@ -56,7 +57,7 @@ function criarArrayDeEspacos(tamanho, espacos, espacosExtra) {
     array.push(' '.repeat(espacos)); 
   }
   
-  indices = shuffle.shuffle(indices);
+  indices = arrayShuffle.shuffle(indices);
 
   for(let i=0;i<espacosExtra;i++) {
     array[indices[i]] += ' ';
@@ -65,24 +66,11 @@ function criarArrayDeEspacos(tamanho, espacos, espacosExtra) {
   return array;
 }
 
-
-function definirComprimentoDaLinha(texto, pos, comprimento) {
-
-  if(pos + comprimento >= texto.length) {
-    return texto.length - pos;
-  }
-
-  let i = pos + comprimento + 1;
-
-  while(i >= 0 && texto[i] != ' ') {
-    i--;
-  }
-
-  return i - pos;
-}
-
-let entrada = 'In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.';
+let entrada1 = 'In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.';
 let entrada2 = 'And God said, "Let there be light," and there was light. God saw that the light was good, and he separated the light from the darkness. God called the light "day," and the darkness he called "night." And there was evening, and there was morning - the first day.';
+
+// Este código é só um teste, por favor não passe um texto que contenha uma palavra maior do que [Comprimento] caracteres. :)
+// Tratar essa situação, quebrando a palavra e hifenizando-a aumentaria bastante a complexidade do problema.
 
 console.log(intermediario(entrada1, 40));
 console.log(intermediario(entrada2, 40));
