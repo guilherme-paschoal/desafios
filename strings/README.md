@@ -13,6 +13,10 @@ Implemente uma função que receba:
 
 e seja capaz de gerar os outputs dos desafios abaixo.
 
+# PARA EXECUTAR
+
+PARA EXECUTAR O CODIGO BASTA NAVEGAR ATE A PASTA `strings/application` E EXECUTAR “NODE BASICO.JS” OU “NODE INTERMEDIARIO.JS" NA LINHA DE COMANDO
+
 ## Exemplo input
 
 `In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.`
