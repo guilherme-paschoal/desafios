@@ -1,4 +1,10 @@
-# Desafio 1: Strings
+# PARA EXECUTAR ===============
+
+PARA EXECUTAR O CODIGO BASTA NAVEGAR ATE A PASTA `strings/application` E EXECUTAR “NODE BASICO.JS” OU “NODE INTERMEDIARIO.JS" NA LINHA DE COMANDO
+
+# =============================
+
+## Desafio 1: Strings
 
 Após ler o coding style do kernel Linux, você descobre a mágica que é 
 ter linhas de código com no máximo 80 caracteres cada uma.
@@ -12,10 +18,6 @@ Implemente uma função que receba:
 2. um limite de comprimento  
 
 e seja capaz de gerar os outputs dos desafios abaixo.
-
-# PARA EXECUTAR
-
-PARA EXECUTAR O CODIGO BASTA NAVEGAR ATE A PASTA `strings/application` E EXECUTAR “NODE BASICO.JS” OU “NODE INTERMEDIARIO.JS" NA LINHA DE COMANDO
 
 ## Exemplo input
 

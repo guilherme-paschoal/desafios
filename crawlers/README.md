@@ -4,6 +4,7 @@
 Para executar o crawler:
 
 Parte 1 - Executar "node simple.js" na linha de comando
+
 Parte 2 - Executar "node telegram_bot.js" na linha de comando e adicionar o bot **IDWallGuilhermeBot** no telegram
 
 # ====================================
